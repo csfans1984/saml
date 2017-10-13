@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.successfactors.I311616</groupId>
+	<artifactId>saml</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>saml Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>org.opensaml</groupId>
+			<artifactId>opensaml</artifactId>
+			<version>2.6.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-catalina</artifactId>
+    <version>8.0.38</version>
+</dependency>
+		
+	</dependencies>
+	<build>
+		<finalName>saml</finalName>
+	</build>
+</project>

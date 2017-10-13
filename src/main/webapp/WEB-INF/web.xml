@@ -1,0 +1,82 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>BootStrap</filter-name>
+  	<filter-class>com.successfactors.I311616.saml.BootStrapFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>BootStrap</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Artifact</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.ArtifactServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GlobalLogout</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.GlobalLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GlobalLogoutResponse</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.GlobalLogoutResponseServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SPLogin</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.SPLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>KeyStoreInfo</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.KeyStoreInfo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>IDPMetadata</servlet-name>
+  	<servlet-class>com.successfactors.I311616.saml.IDPMetadata</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Artifact</servlet-name>
+  	<url-pattern>/artifact</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GlobalLogout</servlet-name>
+  	<url-pattern>/globallogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GlobalLogoutResponse</servlet-name>
+  	<url-pattern>/globallogoutresp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SPLogin</servlet-name>
+  	<url-pattern>/splogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>KeyStoreInfo</servlet-name>
+  	<url-pattern>/keystoreinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IDPMetadata</servlet-name>
+  	<url-pattern>/idpmetadata</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  	<welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
